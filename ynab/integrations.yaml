@@ -1,0 +1,28 @@
+name: YNAB
+unique_key: ynab
+docs: https://api.ynab.com
+description: YNAB (You Need A Budget) is a personal finance software that helps users manage their budget and track their expenses. The YNAB API allows developers to build applications that interact with YNAB budget data.
+logo: https://api.ynab.com/static/images/ynab-logo.svg
+categories: [Finance, Budgeting]
+
+auth schemes:
+  - scheme_name: oauth2
+    auth_mode: OAUTH2
+    authorization_url: https://app.youneedabudget.com/oauth/authorize
+    token_url: https://api.youneedabudget.com/v1/budgets/{budget_id}/oauth_token
+    default_scopes: ["transactions", "accounts", "categories", "payees", "goals"]
+    scope_separator: ' '
+    token_access_request_method: POST
+    authorization_params:
+      response_type: code
+    token_params:
+      grant_type: authorization_code
+    proxy:
+      base_url: "{{base_url}}"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: The base URL for YNAB API.
+        type: string
+        default: https://api.youneedabudget.com/v1
+

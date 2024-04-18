@@ -1,0 +1,28 @@
+name: ScreenshotOne
+unique_key: screenshotone
+docs: https://screenshotone.com/docs/getting-started/
+description: ScreenshotOne API is a service that allows users to generate invoices in PDF format for any given URL or HTML, take screenshots of websites with different options, and check that the site looks as expected.
+logo: https://screenshotone.com/static/images/logo.svg
+categories: [Screenshot, Invoice]
+get_current_user_endpoint: ""
+callback_url: ""
+
+auth schemes:
+  - scheme_name: screenshotone_noauth
+    auth_mode: NO_AUTH
+    authorization_url: ""
+    proxy:
+      base_url: "{{base_url}}"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: The base URL for ScreenshotOne API.
+        type: string
+        default: https://api.screenshotone.com
+      - name: access_key
+        displayName: Access Key
+        description: The access key for ScreenshotOne API.
+        type: string
+        required: true
+
+

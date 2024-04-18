@@ -1,0 +1,36 @@
+name: Mocean API
+unique_key: mocean-api
+docs: https://moceanapi.com/docs/
+description: Mocean is a cloud communications platform that provides SMS, Voice, and Verification APIs for developers and businesses.
+logo: https://moceanapi.com/img/logo.svg
+categories: [SMS, Voice, Verification]
+get_current_user_endpoint: "/v1/me"
+
+auth schemes:
+  - scheme_name: mocean_api_key_secret
+    auth_mode: API-KEY
+    proxy:
+      base_url: "https://rest.moceanapi.com"
+      params:
+        mocean-api-key: "{{api_key}}"
+        mocean-api-secret: "{{api_secret}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Mocean API key. You can find it in your Mocean account dashboard."
+        type: string
+        required: true
+      - name: api_secret
+        expected_from_customer: true
+        displayName: API Secret
+        description: "Your Mocean API secret. You can find it in your Mocean account dashboard."
+        type: string
+        required: true
+      - name: base_url
+        expected_from_customer: true
+        displayName: Base URL
+        description: "The base URL for the Mocean API."
+        type: string
+        required: false
+        default: https://rest.moceanapi.com

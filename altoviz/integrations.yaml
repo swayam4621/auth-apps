@@ -1,0 +1,25 @@
+name: Altoviz
+unique_key: altoviz
+docs: https://developer.altoviz.com
+description: Altoviz is an online management software for entrepreneurs, small businesses, and self-employed individuals. It offers invoicing, payments, treasury, accounting, and more.
+logo: https://www.altoviz.com/static/media/logo.svg
+categories: [Invoicing, Accounting]
+
+auth schemes:
+  - scheme_name: api_key
+    auth_mode: API-KEY
+    proxy:
+      base_url: "{{base_url}}"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: The base URL for Altoviz API.
+        type: string
+        default: https://api.altoviz.com
+      - name: api_key
+        displayName: API Key
+        description: The API key for Altoviz API.
+        type: string
+        required: true

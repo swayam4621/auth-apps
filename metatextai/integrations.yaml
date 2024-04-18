@@ -1,0 +1,23 @@
+name: MetaTextAI
+unique_key: metatextai
+docs: https://metatext.ai/documentation/api
+description: MetaTextAI provides APIs for natural language processing, text generation, and AI-powered content creation.
+logo: https://metatext.ai/favicon.ico
+categories: [Natural Language Processing, Text Generation, AI Writing]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: metatextai_api_key
+    auth_mode: API-KEY
+    proxy:
+      base_url: "https://api.metatext.ai"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your MetaTextAI API key"
+        type: string
+        required: true

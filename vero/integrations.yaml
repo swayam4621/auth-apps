@@ -1,0 +1,29 @@
+name: Vero
+unique_key: vero
+docs: https://developers.getvero.com
+description: Vero is a customer engagement platform for product and product marketing teams at B2C and product-led B2B businesses.
+logo: https://www.getvero.com/wp-content/themes/vero/assets/images/logo/vero-logo-dark.svg
+categories: [Customer Engagement, Email Marketing]
+get_current_user_endpoint: "/api/v2/users/{{id}}"
+
+auth schemes:
+  - scheme_name: vero_api_key
+    auth_mode: API-KEY
+    proxy:
+      base_url: "https://api.getvero.com"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Vero API key. You can find it in your Vero account settings under Integrations > API Keys."
+        type: string
+        required: true
+      - name: base_url
+        expected_from_customer: true
+        displayName: Base URL
+        description: "The base URL for the Vero API."
+        type: string
+        required: false
+        default: https://api.getvero.com

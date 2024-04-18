@@ -1,0 +1,29 @@
+name: Qualaroo
+unique_key: qualaroo
+docs: https://help.qualaroo.com/api-documentation
+description: Qualaroo is a customer and user feedback software that allows you to gather insights from your website visitors and customers.
+logo: https://www.qualaroo.com/hubfs/Qualaroo_January2019/Images/qualaroo-logo.svg
+categories: [Customer Feedback, User Feedback]
+get_current_user_endpoint: "/api/v1/users/{{id}}"
+
+auth schemes:
+  - scheme_name: qualaroo_api_key
+    auth_mode: API-KEY
+    proxy:
+      base_url: "https://api.qualaroo.com"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Qualaroo API key. You can find it in your Qualaroo account settings under Integrations > API."
+        type: string
+        required: true
+      - name: base_url
+        expected_from_customer: true
+        displayName: Base URL
+        description: "The base URL for the Qualaroo API."
+        type: string
+        required: false
+        default: https://api.qualaroo.com

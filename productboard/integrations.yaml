@@ -1,0 +1,42 @@
+name: Productboard
+unique_key: productboard
+docs: https://developer.productboard.com/reference/authentication
+description: Productboard is a customer-centric product management platform that helps organizations get the right products to market, faster.
+logo: https://www.productboard.com/wp-content/themes/productboard/public/images/logo-color.svg
+categories: [Product Management]
+get_current_user_endpoint: "/users/{{id}}"
+
+auth schemes:
+  - scheme_name: productboard_api_key
+    auth_mode: API-KEY
+    proxy:
+      base_url: "https://api.productboard.com"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Productboard API key. You can generate it in your Productboard workspace settings under Integrations > Public APIs > Access Token."
+        type: string
+        required: true
+
+  - scheme_name: productboard_oauth2
+    auth_mode: OAUTH2
+    authorization_url: https://app.productboard.com/oauth/authorize
+    token_url: https://api.productboard.com/oauth/token
+    default_scopes: ["public"]
+    scope_separator: ' '
+    token_access_request_method: POST
+    authorization_params:
+      response_type: code
+    token_params:
+      grant_type: authorization_code
+    proxy:
+      base_url: "https://api.productboard.com"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Productboard API."
+        type: string
+        default: https://api.productboard.com
