@@ -6,7 +6,7 @@ logo: https://moceanapi.com/img/logo.svg
 categories: [SMS, Voice, Verification]
 get_current_user_endpoint: "/v1/me"
 
-auth schemes:
+auth_schemes:
   - scheme_name: mocean_api_key_secret
     auth_mode: API-KEY
     proxy:

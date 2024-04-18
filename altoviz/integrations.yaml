@@ -5,7 +5,7 @@ description: Altoviz is an online management software for entrepreneurs, small b
 logo: https://www.altoviz.com/static/media/logo.svg
 categories: [Invoicing, Accounting]
 
-auth schemes:
+auth_schemes:
   - scheme_name: api_key
     auth_mode: API-KEY
     proxy:

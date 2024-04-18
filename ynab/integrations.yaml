@@ -5,7 +5,7 @@ description: YNAB (You Need A Budget) is a personal finance software that helps 
 logo: https://api.ynab.com/static/images/ynab-logo.svg
 categories: [Finance, Budgeting]
 
-auth schemes:
+auth_schemes:
   - scheme_name: oauth2
     auth_mode: OAUTH2
     authorization_url: https://app.youneedabudget.com/oauth/authorize

@@ -6,7 +6,7 @@ logo: https://www.getvero.com/wp-content/themes/vero/assets/images/logo/vero-log
 categories: [Customer Engagement, Email Marketing]
 get_current_user_endpoint: "/api/v2/users/{{id}}"
 
-auth schemes:
+auth_schemes:
   - scheme_name: vero_api_key
     auth_mode: API-KEY
     proxy:

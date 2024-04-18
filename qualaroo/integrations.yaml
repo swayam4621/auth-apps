@@ -6,7 +6,7 @@ logo: https://www.qualaroo.com/hubfs/Qualaroo_January2019/Images/qualaroo-logo.s
 categories: [Customer Feedback, User Feedback]
 get_current_user_endpoint: "/api/v1/users/{{id}}"
 
-auth schemes:
+auth_schemes:
   - scheme_name: qualaroo_api_key
     auth_mode: API-KEY
     proxy:
