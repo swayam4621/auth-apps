@@ -1,0 +1,43 @@
+name: Lever
+unique_key: lever
+docs: https://hire.lever.co/developer/documentation
+description: Lever provides APIs for applicant tracking, candidate relationship management, and talent acquisition.
+logo: https://lever-client-logos.s3.amazonaws.com/3bc6f0a8-4138-4321-9a16-81e2613a7a1d-1568139679159.png
+categories: [Applicant Tracking System, Talent Acquisition, Recruiting]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: lever_api_key
+    auth_mode: API-KEY
+    proxy:
+      base_url: "https://api.lever.co/v1"
+      headers:
+        Authorization: "Basic {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key (Base64)
+        description: "Your Lever API key, Base64 encoded"
+        type: string
+        required: true
+        
+  - scheme_name: lever_oauth2
+    auth_mode: OAUTH2
+    authorization_url: https://hire.lever.co/oauth/authorize
+    token_url: https://hire.lever.co/oauth/token
+    default_scopes: ["contact:write:admin","applications:read:admin", offline_access"]
+    scope_separator: ' '
+    token_access_request_method: POST
+    authorization_params:
+      response_type: code
+    token_params:
+      grant_type: authorization_code
+    proxy:
+      base_url: {{base_url}}
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: The base URL for Lever API.
+        type: string
+        default: https://api.lever.co/v1

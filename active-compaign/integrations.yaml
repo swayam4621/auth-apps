@@ -1,0 +1,29 @@
+name: ActiveCampaign
+unique_key: activecampaign
+docs: https://developers.activecampaign.com/reference/overview
+description: ActiveCampaign provides APIs for marketing automation, customer relationship management (CRM), and email marketing.
+logo: https://www.activecampaign.com/favicon.ico
+categories: [Marketing Automation, CRM, Email Marketing]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: activecampaign_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "{{api_url}}"
+      headers:
+        Api-Token: "{{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your ActiveCampaign API key"
+        type: string
+        required: true
+      - name: api_url
+        expected_from_customer: true
+        displayName: API URL
+        description: "Your ActiveCampaign API URL (e.g., https://youraccount.api-us1.com)"
+        type: string
+        required: true
