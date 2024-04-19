@@ -1,0 +1,23 @@
+name: Helcim
+unique_key: helcim
+docs: https://devdocs.helcim.com/
+description: Helcim provides APIs for payment processing, customer management, and building custom payment solutions.
+logo: https://www.helcim.com/wp-content/uploads/2022/03/Helcim-Logo-2022-Indigo.svg
+categories: [Payment Processing, Payment Gateway, Merchant Services]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: helcim_api_key
+    auth_mode: API-KEY
+    proxy:
+      base_url: "https://api.helcim.com/v1"
+      headers:
+        Authorization: "Bearer {{api_token}}"
+    fields:
+      - name: api_token
+        expected_from_customer: true
+        displayName: API Token
+        description: "Your Helcim API key"
+        type: string
+        required: true

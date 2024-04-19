@@ -26,7 +26,7 @@ auth_schemes:
     auth_mode: OAUTH2
     authorization_url: https://hire.lever.co/oauth/authorize
     token_url: https://hire.lever.co/oauth/token
-    default_scopes: ["contact:write:admin","applications:read:admin", offline_access"]
+    default_scopes: ["contact:write:admin applications:read:admin offline_access"]
     scope_separator: ' '
     token_access_request_method: POST
     authorization_params:
@@ -34,7 +34,7 @@ auth_schemes:
     token_params:
       grant_type: authorization_code
     proxy:
-      base_url: {{base_url}}
+      base_url: "{{base_url}}"
     fields:
       - name: base_url
         displayName: Base URL
