@@ -24,8 +24,8 @@ auth_schemes:
         
   - scheme_name: lever_oauth2
     auth_mode: OAUTH2
-    authorization_url: https://hire.sandbox.lever.co/oauth/authorize
-    token_url: https://hire.sandbox.lever.co/oauth/token
+    authorization_url: https://auth.lever.co/authorize
+    token_url: https://auth.lever.co/token
     default_scopes: ["contact:write:admin applications:read:admin offline_access"]
     scope_separator: ' '
     token_access_request_method: POST
