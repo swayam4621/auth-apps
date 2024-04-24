@@ -9,7 +9,7 @@ callback_url: https://backend.composio.dev/api/v1/auth-apps/add
 
 auth_schemes:
   - scheme_name: helcim_api_key
-    auth_mode: API-KEY
+    auth_mode: API_KEY
     proxy:
       base_url: "https://api.helcim.com/v1"
       headers:

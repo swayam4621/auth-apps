@@ -1,0 +1,23 @@
+name: ncScale
+unique_key: ncscale
+docs: https://documentation.ncscale.io/docs/api/api
+description: ncScale provides a robust data API for programmatically interacting with and manipulating ncScale data.
+logo: https://documentation.ncscale.io/favicon.png
+categories: [Data API, Data Management]
+get_current_user_endpoint: "/v1/ping"
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: ncscale_bearer_auth
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.ncscale.io"
+      headers:
+        Authorization: "Bearer {{access_token}}"
+    fields:
+      - name: access_token
+        expected_from_customer: true
+        displayName: Access Token
+        description: "Your ncScale API access token"
+        type: string
+        required: true

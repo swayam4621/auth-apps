@@ -1,0 +1,23 @@
+name: Botbaba
+unique_key: botbaba
+docs: https://kb.botbaba.io/
+description: Botbaba provides APIs for building and managing chatbots, including conversational AI and messaging integrations.
+logo: https://botbaba.io/wp-content/uploads/2022/07/cropped-Botbaba-Favicon-32x32.png
+categories: [Chatbots, Conversational AI, Messaging]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: botbaba_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.botbaba.io/v1"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Botbaba API key"
+        type: string
+        required: true

@@ -8,7 +8,7 @@ get_current_user_endpoint: "/api/v2/users/{{id}}"
 
 auth_schemes:
   - scheme_name: vero_api_key
-    auth_mode: API-KEY
+    auth_mode: API_KEY
     proxy:
       base_url: "https://api.getvero.com"
       headers:

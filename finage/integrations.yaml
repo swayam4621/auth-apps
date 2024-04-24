@@ -1,0 +1,23 @@
+name: Finage
+unique_key: finage
+docs: https://finage.co.uk/docs
+description: Finage provides APIs for real-time and historical data on stocks, forex, crypto, and company fundamentals.
+logo: https://finage.co.uk/img/logo/finage.png
+categories: [Financial Data, Stocks, Forex, Crypto, Fundamentals]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: finage_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.finage.co.uk"
+      params:
+        apikey: "{{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Finage API key"
+        type: string
+        required: true

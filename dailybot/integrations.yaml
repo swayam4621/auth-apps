@@ -1,0 +1,23 @@
+name: DailyBot
+unique_key: dailybot
+docs: https://www.dailybot.com/docs/api-overview
+description: DailyBot provides APIs for building custom integrations and add-ons for the DailyBot platform.
+logo: https://www.dailybot.com/favicon.ico
+categories: [Chatbots, Productivity, Automation]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: dailybot_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.dailybot.com"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your DailyBot API key"
+        type: string
+        required: true

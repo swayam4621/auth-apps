@@ -1,0 +1,23 @@
+name: Simplesat
+unique_key: simplesat
+docs: https://documenter.getpostman.com/view/457268/UVRDGRZ2
+description: Simplesat provides APIs for managing customer feedback, surveys, and satisfaction metrics.
+logo: https://simplesat.io/wp-content/uploads/2022/03/cropped-favicon-180x180.png
+categories: [Customer Feedback, Surveys, Customer Satisfaction]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: simplesat_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.simplesat.io/api/v1"
+      headers:
+        X-Simplesat-KEY: "{{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Simplesat API key"
+        type: string
+        required: true

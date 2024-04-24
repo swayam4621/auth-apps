@@ -1,0 +1,23 @@
+name: Flutterwave
+unique_key: flutterwave
+docs: https://developer.flutterwave.com/docs/quickstart/
+description: Flutterwave provides APIs for making and receiving payments in various currencies and countries.
+logo: https://flutterwave.com/images/favicon.png
+categories: [Payment Processing, Payment Gateway]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: flutterwave_secret_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.flutterwave.com/v3"
+      headers:
+        Authorization: "Bearer {{secret_key}}"
+    fields:
+      - name: secret_key
+        expected_from_customer: true
+        displayName: Secret Key
+        description: "Your Flutterwave secret key"
+        type: string
+        required: true

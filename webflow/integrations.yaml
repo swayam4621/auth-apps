@@ -1,0 +1,23 @@
+name: Webflow
+unique_key: webflow
+docs: https://developers.webflow.com
+description: Webflow provides APIs for building and managing websites, including CMS and ecommerce functionality.
+logo: https://assets-global.website-files.com/5d3e265ac89f6a3e64292efc/5d5595354de4fbdd8c554dba_favicon-256.png
+categories: [Website Builder, CMS, Ecommerce]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: webflow_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.webflow.com"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Webflow API key"
+        type: string
+        required: true

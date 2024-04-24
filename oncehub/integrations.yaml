@@ -1,0 +1,24 @@
+name: OnceHub
+unique_key: oncehub
+docs: https://developers.oncehub.com/docs/introduction-to-the-scheduleonce-api
+description: OnceHub provides APIs for scheduling, booking management, and customer data integration.
+logo: https://developers.oncehub.com/images/oncehub-logo.png
+categories: [Scheduling, Booking Management, Customer Data Integration]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: oncehub_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.oncehub.com"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+        Content-Type: "application/json"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your OnceHub API key"
+        type: string
+        required: true

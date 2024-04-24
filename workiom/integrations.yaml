@@ -1,0 +1,23 @@
+name: Workiom
+unique_key: workiom
+docs: https://help.workiom.com/article/workiom-api-guide
+description: Workiom provides APIs for automating workflows, integrating with various tools, and building custom applications.
+logo: https://help.workiom.com/images/logo.png
+categories: [Workflow Automation, Integration, Custom Applications]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: workiom_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.workiom.com/"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Workiom API key"
+        type: string
+        required: true

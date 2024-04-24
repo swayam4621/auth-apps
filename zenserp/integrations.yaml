@@ -1,0 +1,23 @@
+name: ZenSERP
+unique_key: zenserp
+docs: https://app.zenserp.com/documentation
+description: ZenSERP provides APIs for search engine result pages (SERP) data, including organic results, ads, related searches, and more.
+logo: https://app.zenserp.com/img/logo.png
+categories: [Search Engine Data, SERP, Keyword Research]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: zenserp_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://app.zenserp.com/api/v2"
+      params:
+        apikey: "{{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your ZenSERP API key"
+        type: string
+        required: true

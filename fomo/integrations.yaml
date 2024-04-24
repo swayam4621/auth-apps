@@ -1,0 +1,23 @@
+name: FOMO
+unique_key: fomo
+docs: https://docs.fomo.com/reference/welcome-to-fomo
+description: FOMO provides APIs for social proof automation, showing recent customer activity on websites.
+logo: https://fomo.com/favicon.ico
+categories: [Social Proof, Marketing Automation]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: fomo_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.fomo.com"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your FOMO API key"
+        type: string
+        required: true

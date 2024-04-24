@@ -1,0 +1,23 @@
+name: Interzoid
+unique_key: interzoid
+docs: https://docs.interzoid.com/
+description: Interzoid provides AI-enhanced data matching solutions, including a comprehensive API-first data platform, interactive web applications, and seamless integration with cloud data sources.
+logo: https://www.interzoid.com/wp-content/uploads/2022/11/interzoid-logo-1.png
+categories: [Data Matching, Data Quality, Data Integration, Cloud Data]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: interzoid_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.interzoid.com"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Interzoid API key"
+        type: string
+        required: true

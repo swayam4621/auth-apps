@@ -1,0 +1,29 @@
+name: Formsite
+unique_key: formsite
+docs: https://support.formsite.com/hc/en-us/articles/360000288594-API
+description: Formsite provides APIs for programmatically retrieving form results and managing form data.
+logo: https://support.formsite.com/hc/article_attachments/360000288594/formsite-logo.png
+categories: [Forms, Data Collection, Form Management]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: formsite_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "{{form_api_base_url}}"
+      headers:
+        Authorization: "Bearer {{access_token}}"
+    fields:
+      - name: access_token
+        expected_from_customer: true
+        displayName: Access Token
+        description: "Your Formsite account's access token"
+        type: string
+        required: true
+      - name: form_api_base_url
+        expected_from_customer: true
+        displayName: Form API Base URL
+        description: "The API base URL for your Formsite form"
+        type: string
+        required: true

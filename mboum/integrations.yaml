@@ -1,0 +1,23 @@
+name: Mboum
+unique_key: mboum
+docs: https://mboum.com/api/documentation
+description: Mboum provides APIs for real-time, intraday, and historical stock market data, covering over 70+ stock exchanges and 185,000+ stock tickers worldwide.
+logo: https://mboum.com/images/logo.png
+categories: [Financial Data, Stock Market, Cryptocurrencies]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: mboum_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://mboum.com/api/v1"
+      headers:
+        X-Mboum-Secret: "{{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Mboum API key"
+        type: string
+        required: true

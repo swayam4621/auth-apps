@@ -1,0 +1,35 @@
+name: Terminus
+unique_key: terminus
+docs: https://www.terminusapp.com/apidocs
+description: Terminus provides a RESTful API for performing various operations on your Terminus account, such as managing projects, conventions, and information fields.
+logo: https://www.terminusapp.com/favicon.ico
+categories: [Project Management, Data Management]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: terminus_basic_auth
+    auth_mode: BASIC
+    proxy:
+      base_url: "https://api.terminusapp.com/v1"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Terminus API key"
+        type: string
+        required: true
+        
+  - scheme_name: terminus_bearer_auth
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.terminusapp.com/v1"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Terminus API key"
+        type: string
+        required: true

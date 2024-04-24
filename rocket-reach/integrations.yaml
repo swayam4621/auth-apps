@@ -1,0 +1,23 @@
+name: RocketReach
+unique_key: rocketreach
+docs: https://rocketreach.co/api/docs/
+description: RocketReach provides APIs for searching and retrieving contact information for professionals and companies.
+logo: https://rocketreach.co/wp-content/uploads/2022/05/RR_Favicon.png
+categories: [Contact Data, Lead Generation]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: rocketreach_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.rocketreach.co/v1"
+      headers:
+        Api-Key: "{{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your RocketReach API key"
+        type: string
+        required: true

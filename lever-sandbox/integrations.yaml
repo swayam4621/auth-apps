@@ -11,7 +11,7 @@ auth_schemes:
   - scheme_name: lever_api_key
     auth_mode: API_KEY
     proxy:
-      base_url: "https://api.lever.co/v1"
+      base_url: "https://api.sandbox.lever.co/v1"
       headers:
         Authorization: "Basic {{api_key}}"
     fields:
@@ -24,8 +24,8 @@ auth_schemes:
         
   - scheme_name: lever_oauth2
     auth_mode: OAUTH2
-    authorization_url: https://hire.lever.co/oauth/authorize
-    token_url: https://hire.lever.co/oauth/token
+    authorization_url: https://sandbox-lever.auth0.com/authorize 
+    token_url: https://sandbox-lever.auth0.com/oauth/token
     default_scopes: ["contact:write:admin applications:read:admin offline_access"]
     scope_separator: ' '
     token_access_request_method: POST
@@ -41,4 +41,4 @@ auth_schemes:
         displayName: Base URL
         description: The base URL for Lever API.
         type: string
-        default: https://api.lever.co/v1
+        default: https://api.sandbox.lever.co/v1

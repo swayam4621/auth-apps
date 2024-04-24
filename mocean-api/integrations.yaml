@@ -8,7 +8,7 @@ get_current_user_endpoint: "/v1/me"
 
 auth_schemes:
   - scheme_name: mocean_api_key_secret
-    auth_mode: API-KEY
+    auth_mode: API_KEY
     proxy:
       base_url: "https://rest.moceanapi.com"
       params:

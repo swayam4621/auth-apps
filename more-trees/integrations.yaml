@@ -1,0 +1,23 @@
+name: More Trees
+unique_key: more-trees
+docs: https://kb.tree-nation.com/knowledge/api-availability
+description: More Trees provides an API for automating tree planting services and customizing impact statistics.
+logo: https://www.moretrees.eco/wp-content/uploads/2021/06/favicon-32x32-1.png
+categories: [Sustainability, Tree Planting]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: more_trees_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://api.moretrees.eco/v1"
+      headers:
+        Authorization: "Bearer {{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your More Trees API key"
+        type: string
+        required: true

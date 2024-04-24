@@ -8,7 +8,7 @@ get_current_user_endpoint: "/api/v1/users/{{id}}"
 
 auth_schemes:
   - scheme_name: qualaroo_api_key
-    auth_mode: API-KEY
+    auth_mode: API_KEY
     proxy:
       base_url: "https://api.qualaroo.com"
       headers:

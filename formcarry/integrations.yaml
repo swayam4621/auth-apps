@@ -1,0 +1,23 @@
+name: Formcarry
+unique_key: formcarry
+docs: https://formcarry.com/docs/formcarry-api/forms-api
+description: Formcarry provides APIs for creating and managing forms, retrieving form submissions, and handling notifications.
+logo: https://formcarry.com/favicon.ico
+categories: [Forms, Data Collection, Form Management]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: formcarry_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://formcarry.com/api"
+      headers:
+        api_key: "{{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true
+        displayName: API Key
+        description: "Your Formcarry API key"
+        type: string
+        required: true

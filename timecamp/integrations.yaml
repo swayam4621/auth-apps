@@ -1,0 +1,23 @@
+name: TimeCamp
+unique_key: timecamp
+docs: https://developer.timecamp.com/
+description: TimeCamp provides APIs for time tracking, project management, and productivity analytics.
+logo: https://cdn.timecamp.com/res/css/images/favicons/apple-touch-icon.png
+categories: [Time Tracking, Project Management, Productivity]
+get_current_user_endpoint:  
+callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+
+auth_schemes:
+  - scheme_name: timecamp_api_key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://app.timecamp.com/third_party/api"
+      headers:
+        Authorization: {{api_token}}
+    fields:
+      - name: api_token
+        expected_from_customer: true
+        displayName: API Token
+        description: "Your TimeCamp API token"
+        type: string
+        required: true
