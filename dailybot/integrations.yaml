@@ -2,7 +2,7 @@ name: DailyBot
 unique_key: dailybot
 docs: https://www.dailybot.com/docs/api-overview
 description: DailyBot provides APIs for building custom integrations and add-ons for the DailyBot platform.
-logo: https://www.dailybot.com/favicon.ico
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/dailybot.jpg
 categories: [Chatbots, Productivity, Automation]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

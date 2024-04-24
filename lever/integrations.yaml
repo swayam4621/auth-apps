@@ -2,7 +2,7 @@ name: Lever
 unique_key: lever
 docs: https://hire.lever.co/developer/documentation
 description: Lever provides APIs for applicant tracking, candidate relationship management, and talent acquisition.
-logo: https://lever-client-logos.s3.amazonaws.com/3bc6f0a8-4138-4321-9a16-81e2613a7a1d-1568139679159.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/lever.png
 categories: [Applicant Tracking System, Talent Acquisition, Recruiting]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

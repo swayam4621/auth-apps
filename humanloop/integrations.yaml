@@ -2,7 +2,7 @@ name: Humanloop
 unique_key: humanloop
 docs: https://docs.humanloop.com/reference/sdk
 description: Humanloop provides SDKs and APIs for building AI-powered applications and integrating with language models like GPT-3 and GPT-4.
-logo: https://docs.humanloop.com/img/logo.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/humanloop.jpeg
 categories: [AI, Language Models, GPT-3, GPT-4]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

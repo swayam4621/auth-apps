@@ -2,7 +2,7 @@ name: Simplesat
 unique_key: simplesat
 docs: https://documenter.getpostman.com/view/457268/UVRDGRZ2
 description: Simplesat provides APIs for managing customer feedback, surveys, and satisfaction metrics.
-logo: https://simplesat.io/wp-content/uploads/2022/03/cropped-favicon-180x180.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/simplesat.jpeg
 categories: [Customer Feedback, Surveys, Customer Satisfaction]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

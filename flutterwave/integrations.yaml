@@ -2,7 +2,7 @@ name: Flutterwave
 unique_key: flutterwave
 docs: https://developer.flutterwave.com/docs/quickstart/
 description: Flutterwave provides APIs for making and receiving payments in various currencies and countries.
-logo: https://flutterwave.com/images/favicon.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/flutterwave.png
 categories: [Payment Processing, Payment Gateway]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

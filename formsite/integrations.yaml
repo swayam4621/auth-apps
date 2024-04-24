@@ -2,7 +2,7 @@ name: Formsite
 unique_key: formsite
 docs: https://support.formsite.com/hc/en-us/articles/360000288594-API
 description: Formsite provides APIs for programmatically retrieving form results and managing form data.
-logo: https://support.formsite.com/hc/article_attachments/360000288594/formsite-logo.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/formsite.png
 categories: [Forms, Data Collection, Form Management]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

@@ -2,7 +2,7 @@ name: Altoviz
 unique_key: altoviz
 docs: https://developer.altoviz.com
 description: Altoviz is an online management software for entrepreneurs, small businesses, and self-employed individuals. It offers invoicing, payments, treasury, accounting, and more.
-logo: https://www.altoviz.com/static/media/logo.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/altoviz.jpeg
 categories: [Invoicing, Accounting]
 
 auth_schemes:

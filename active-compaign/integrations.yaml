@@ -2,7 +2,7 @@ name: ActiveCampaign
 unique_key: activecampaign
 docs: https://developers.activecampaign.com/reference/overview
 description: ActiveCampaign provides APIs for marketing automation, customer relationship management (CRM), and email marketing.
-logo: https://www.activecampaign.com/favicon.ico
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/activecampaign.png
 categories: [Marketing Automation, CRM, Email Marketing]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

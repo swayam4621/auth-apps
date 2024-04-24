@@ -2,7 +2,7 @@ name: Tisane.ai
 unique_key: tisane_ai
 docs: https://docs.tisane.ai/
 description: Tisane.ai provides APIs for natural language processing, text analysis, and content moderation in multiple languages.
-logo: https://tisane.ai/assets/images/tisane-logo.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/tisane_ai.png
 categories: [Natural Language Processing, Text Analysis, Content Moderation]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

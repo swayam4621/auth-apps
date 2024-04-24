@@ -2,7 +2,7 @@ name: Botbaba
 unique_key: botbaba
 docs: https://kb.botbaba.io/
 description: Botbaba provides APIs for building and managing chatbots, including conversational AI and messaging integrations.
-logo: https://botbaba.io/wp-content/uploads/2022/07/cropped-Botbaba-Favicon-32x32.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/botbaba.png
 categories: [Chatbots, Conversational AI, Messaging]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

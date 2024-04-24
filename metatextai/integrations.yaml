@@ -2,7 +2,7 @@ name: MetaTextAI
 unique_key: metatextai
 docs: https://metatext.ai/documentation/api
 description: MetaTextAI provides APIs for natural language processing, text generation, and AI-powered content creation.
-logo: https://metatext.ai/favicon.ico
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/metatextai.jpeg
 categories: [Natural Language Processing, Text Generation, AI Writing]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

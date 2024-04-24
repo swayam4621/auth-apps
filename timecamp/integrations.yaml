@@ -2,7 +2,7 @@ name: TimeCamp
 unique_key: timecamp
 docs: https://developer.timecamp.com/
 description: TimeCamp provides APIs for time tracking, project management, and productivity analytics.
-logo: https://cdn.timecamp.com/res/css/images/favicons/apple-touch-icon.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/timecamp.png
 categories: [Time Tracking, Project Management, Productivity]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

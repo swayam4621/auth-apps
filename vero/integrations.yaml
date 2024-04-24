@@ -2,7 +2,7 @@ name: Vero
 unique_key: vero
 docs: https://developers.getvero.com
 description: Vero is a customer engagement platform for product and product marketing teams at B2C and product-led B2B businesses.
-logo: https://www.getvero.com/wp-content/themes/vero/assets/images/logo/vero-logo-dark.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/vero.png
 categories: [Customer Engagement, Email Marketing]
 get_current_user_endpoint: "/api/v2/users/{{id}}"
 

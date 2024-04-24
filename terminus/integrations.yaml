@@ -2,7 +2,7 @@ name: Terminus
 unique_key: terminus
 docs: https://www.terminusapp.com/apidocs
 description: Terminus provides a RESTful API for performing various operations on your Terminus account, such as managing projects, conventions, and information fields.
-logo: https://www.terminusapp.com/favicon.ico
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/terminus.jpeg
 categories: [Project Management, Data Management]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

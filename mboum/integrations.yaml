@@ -2,7 +2,7 @@ name: Mboum
 unique_key: mboum
 docs: https://mboum.com/api/documentation
 description: Mboum provides APIs for real-time, intraday, and historical stock market data, covering over 70+ stock exchanges and 185,000+ stock tickers worldwide.
-logo: https://mboum.com/images/logo.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/mboum.jpeg
 categories: [Financial Data, Stock Market, Cryptocurrencies]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

@@ -2,7 +2,7 @@ name: Docmosis
 unique_key: docmosis
 docs: https://apidocs.docmosis.com/cloud/dws4/
 description: Docmosis provides APIs for document generation, template management, and data merging.
-logo: https://apidocs.docmosis.com/cloud/dws4/favicon-32x32.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/docmosis.jpeg
 categories: [Document Generation, Template Management, Data Merging]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

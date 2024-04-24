@@ -2,7 +2,7 @@ name: YNAB
 unique_key: ynab
 docs: https://api.ynab.com
 description: YNAB (You Need A Budget) is a personal finance software that helps users manage their budget and track their expenses. The YNAB API allows developers to build applications that interact with YNAB budget data.
-logo: https://api.ynab.com/static/images/ynab-logo.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/ynab.svg
 categories: [Finance, Budgeting]
 
 auth_schemes:

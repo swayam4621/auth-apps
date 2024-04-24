@@ -2,7 +2,7 @@ name: Productboard
 unique_key: productboard
 docs: https://developer.productboard.com/reference/authentication
 description: Productboard is a customer-centric product management platform that helps organizations get the right products to market, faster.
-logo: https://www.productboard.com/wp-content/themes/productboard/public/images/logo-color.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/productboard.jpg
 categories: [Product Management]
 get_current_user_endpoint: "/users/{{id}}"
 
