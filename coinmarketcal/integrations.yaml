@@ -2,7 +2,7 @@ name: CoinMarketCal
 unique_key: coinmarketcal
 docs: https://coinmarketcal.com/en/doc/redoc
 description: CoinMarketCal provides a comprehensive calendar of cryptocurrency events, including token sales, exchange listings, roadmap milestones, and more.
-logo: https://coinmarketcal.com/favicon.ico
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/coinmarketcal.png
 categories: [Cryptocurrency, Events Calendar]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

@@ -2,7 +2,7 @@ name: Mocean API
 unique_key: mocean-api
 docs: https://moceanapi.com/docs/
 description: Mocean is a cloud communications platform that provides SMS, Voice, and Verification APIs for developers and businesses.
-logo: https://moceanapi.com/img/logo.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/mocean-api.jpg
 categories: [SMS, Voice, Verification]
 get_current_user_endpoint: "/v1/me"
 

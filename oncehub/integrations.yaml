@@ -2,7 +2,7 @@ name: OnceHub
 unique_key: oncehub
 docs: https://developers.oncehub.com/docs/introduction-to-the-scheduleonce-api
 description: OnceHub provides APIs for scheduling, booking management, and customer data integration.
-logo: https://developers.oncehub.com/images/oncehub-logo.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/oncehub.jpg
 categories: [Scheduling, Booking Management, Customer Data Integration]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

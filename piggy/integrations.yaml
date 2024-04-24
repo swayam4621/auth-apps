@@ -1,7 +1,7 @@
 
 docs: https://docs.piggy.eu/v3
 description: Piggy is a cashback and loyalty platform that helps businesses reward their customers for purchases and engagement.
-logo: https://piggy.eu/wp-content/uploads/2021/03/piggy-logo.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/piggy.png
 categories: [Cashback, Loyalty]
 get_current_user_endpoint:
 

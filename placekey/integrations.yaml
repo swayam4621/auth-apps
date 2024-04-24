@@ -2,7 +2,7 @@ name: Placekey
 unique_key: placekey
 docs: https://docs.placekey.io
 description: Placekey provides APIs for generating unique identifiers for physical places, enabling easy data matching and entity resolution.
-logo: https://www.placekey.io/images/logo.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/placekey.png
 categories: [Location Data, Address Matching, Entity Resolution]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

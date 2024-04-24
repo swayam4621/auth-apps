@@ -2,7 +2,7 @@ name: Finage
 unique_key: finage
 docs: https://finage.co.uk/docs
 description: Finage provides APIs for real-time and historical data on stocks, forex, crypto, and company fundamentals.
-logo: https://finage.co.uk/img/logo/finage.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/finage.png
 categories: [Financial Data, Stocks, Forex, Crypto, Fundamentals]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

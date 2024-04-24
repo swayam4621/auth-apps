@@ -2,5 +2,5 @@ name: Rafflys
 unique_key: rafflys
 docs: https://docs.rafflys.com/
 description: Rafflys is a platform that allows you to create and manage giveaways and contests. The Rafflys API allows developers to interact with the platform programmatically.
-logo: https://rafflys.com/assets/images/logo.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/rafflys.png
 categories: [Giveaways, Contests]

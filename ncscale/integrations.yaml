@@ -2,7 +2,7 @@ name: ncScale
 unique_key: ncscale
 docs: https://documentation.ncscale.io/docs/api/api
 description: ncScale provides a robust data API for programmatically interacting with and manipulating ncScale data.
-logo: https://documentation.ncscale.io/favicon.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/ncscale.jpeg
 categories: [Data API, Data Management]
 get_current_user_endpoint: "/v1/ping"
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

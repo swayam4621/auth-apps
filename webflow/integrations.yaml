@@ -2,7 +2,7 @@ name: Webflow
 unique_key: webflow
 docs: https://developers.webflow.com
 description: Webflow provides APIs for building and managing websites, including CMS and ecommerce functionality.
-logo: https://assets-global.website-files.com/5d3e265ac89f6a3e64292efc/5d5595354de4fbdd8c554dba_favicon-256.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/webflow.jpeg
 categories: [Website Builder, CMS, Ecommerce]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

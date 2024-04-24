@@ -2,7 +2,7 @@ name: Cloudflare
 unique_key: cloudflare
 docs: https://developers.cloudflare.com/api/
 description: Cloudflare provides APIs for managing and automating Cloudflare services, including DNS, CDN, security, and more.
-logo: https://www.cloudflare.com/favicon.ico
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/cloudflare.png
 categories: [CDN, DNS, Security, Web Performance]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

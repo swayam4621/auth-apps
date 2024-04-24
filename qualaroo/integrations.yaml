@@ -2,7 +2,7 @@ name: Qualaroo
 unique_key: qualaroo
 docs: https://help.qualaroo.com/api-documentation
 description: Qualaroo is a customer and user feedback software that allows you to gather insights from your website visitors and customers.
-logo: https://www.qualaroo.com/hubfs/Qualaroo_January2019/Images/qualaroo-logo.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/qualaroo.jpeg
 categories: [Customer Feedback, User Feedback]
 get_current_user_endpoint: "/api/v1/users/{{id}}"
 

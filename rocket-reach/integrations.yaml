@@ -2,7 +2,7 @@ name: RocketReach
 unique_key: rocketreach
 docs: https://rocketreach.co/api/docs/
 description: RocketReach provides APIs for searching and retrieving contact information for professionals and companies.
-logo: https://rocketreach.co/wp-content/uploads/2022/05/RR_Favicon.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/rocketreach.png
 categories: [Contact Data, Lead Generation]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

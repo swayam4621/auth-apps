@@ -2,7 +2,7 @@ name: Helcim
 unique_key: helcim
 docs: https://devdocs.helcim.com/
 description: Helcim provides APIs for payment processing, customer management, and building custom payment solutions.
-logo: https://www.helcim.com/wp-content/uploads/2022/03/Helcim-Logo-2022-Indigo.svg
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/helcim.png
 categories: [Payment Processing, Payment Gateway, Merchant Services]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add

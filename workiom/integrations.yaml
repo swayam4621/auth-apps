@@ -2,7 +2,7 @@ name: Workiom
 unique_key: workiom
 docs: https://help.workiom.com/article/workiom-api-guide
 description: Workiom provides APIs for automating workflows, integrating with various tools, and building custom applications.
-logo: https://help.workiom.com/images/logo.png
+logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/workiom.jpeg
 categories: [Workflow Automation, Integration, Custom Applications]
 get_current_user_endpoint:  
 callback_url: https://backend.composio.dev/api/v1/auth-apps/add
