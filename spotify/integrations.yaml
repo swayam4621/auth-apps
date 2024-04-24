@@ -1,0 +1,24 @@
+name: Spotify
+unique_key: spotify
+description: Spotify is a digital music service that gives you access to millions of songs.
+logo: <link_to_spotify_logo>
+categories: [music, entertainment]
+
+auth_schemes:
+  - scheme_name: spotify_oauth
+    auth_mode: OAUTH2
+    authorization_url: "https://accounts.spotify.com/authorize"
+    token_url: "https://accounts.spotify.com/api/token"
+    default_scopes: ["user-read-private", "user-read-email"]
+    token_params:
+      grant_type: "authorization_code"
+    authorization_params:
+      response_type: "code"
+    proxy:
+      base_url: "https://api.spotify.com"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "The base URL for Spotify API requests. For more information, visit https://developer.spotify.com/documentation/web-api/"
+        type: string
+        default: "https://api.spotify.com"
