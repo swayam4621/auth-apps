@@ -1,23 +1,90 @@
-name: DataRobot
-unique_key: datarobot
-docs: https://docs.datarobot.com/en/docs/api/reference/public-api/utilities.html
-description: DataRobot provides APIs for machine learning automation, including model training, deployment, and management.
-logo: https://raw.githubusercontent.com/SamparkAI/open-logos/master/datarobot.png
-categories: [Machine Learning, AI, Predictive Analytics]
-get_current_user_endpoint:  
-callback_url: https://backend.composio.dev/api/v1/auth-apps/add
+name: DataRobot API
+docs: https://docs.datarobot.com/en/api
+description: API for interacting with DataRobot services
+logo: https://brandfetch.com/datarobot.com?library=default&collection=logos&asset=idpuxzoGdR&view=overview
+categories: ["asd", "asdad"]
+get_current_user_endpoint: ""
 
 auth_schemes:
-  - scheme_name: datarobot_bearer_auth
+  - scheme_name: 
     auth_mode: OAUTH2
+    authorization_url: 
+    token_url: 
+    default_scopes: [""]
+    scope_separator: ','
+    token_access_request_method: 
+    authorization_params:
+        response_type: 
+    token_params:
+        grant_type: 
     proxy:
-      base_url: "https://app.datarobot.com/api/v2"
-      headers:
-        Authorization: "Bearer {{access_token}}"
+      base_url: "https://www.datarobot.com/"
     fields:
-      - name: access_token
-        expected_from_customer: true
-        displayName: Access Token
-        description: "Your DataRobot API access token"
+      - name: base_url
+        displayName: Base URL
+        description: "desc_here"
+        type: string
+        default: {{api endpoint URL of the app}}
+
+  - scheme_name: 
+    auth_mode: OAuth1
+    request_url: 
+    authorization_url: 
+    token_url: 
+    signature_method: 
+    default_scopes: [""]
+    scope_separator: ','
+    authorization_params:
+        expiration: 
+    token_params:
+        grant_type: 
+    proxy:
+      base_url: "https://www.datarobot.com/"
+    fields:
+      - name: base_url
+        displayName: Base URL
+        description: "desc_here"
+        type: string
+        default: {{add the api endpoint URL of the app}}
+
+  - scheme_name: app_name_api-key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "https://www.datarobot.com/"
+      headers:
+        Authorization: "NjYyM2NiYzEyNTJhMGYzM2EzMjIwYTYxOkNyQVRiT0ZXOE1zQVZCVko4M1NGR2JJaVdWUzBraHo4clh0TkIrbUpzK0k9"
+    fields:
+      - name: api_key
+        expected_from_customer: true 
+        displayName: API Key
+        description: "add_desc_here"
         type: string
         required: true
+      - name: base_url
+        expected_from_customer: true 
+        displayName: Base URL
+        description: "add_desc_here"
+        type: string
+        required: false
+        default: {{add the api endpoint URL of the app}}
+
+  - scheme_name: app_name_basic
+    auth_mode: BASIC
+    proxy:
+      base_url: {{add the api_endpoint_url}}
+    fields:
+      - name: api_key
+        displayName: API Key
+        description: "desc_here"
+        type: string
+        expected_from_customer: true
+      - name: username
+        displayName: Username
+        description: "desc_here"
+        type: string
+        expected_from_customer: 
+      - name: password
+        displayName: Password
+        description: "your password here."
+        type: string
+        expected_from_customer: true
