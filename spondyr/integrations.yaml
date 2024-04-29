@@ -1,7 +1,7 @@
 name: spondyr
 docs: https://client.spondyr.io/#/Public/Public/APIDocumentation
 description: API documentation for spondyr
-logo: 
+logo: https://pipedream.com/s.v0/app_mLNhNw/logo/orig
 categories: ["asd", "asdad"]
 get_current_user_endpoint: ""
 
@@ -11,7 +11,7 @@ auth_schemes:
     proxy:
       base_url: "http://www.spondyr.io/"
       headers:
-        Authorization: "{{api_key}}"
+        Authorization: "bc075e27-db8d-4d7c-96de-e3c5b45ed246"
     fields:
       - name: api_key
         expected_from_customer: true 
@@ -25,4 +25,4 @@ auth_schemes:
         description: "add_desc_here"
         type: string
         required: false
-        default: {{add the api endpoint URL of the app}}
+        default: https://client.spondyr.io/api/v1.0.0/TransactionTypes 
