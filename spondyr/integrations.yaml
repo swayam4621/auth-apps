@@ -1,0 +1,28 @@
+name: spondyr
+docs: https://client.spondyr.io/#/Public/Public/APIDocumentation
+description: API documentation for spondyr
+logo: 
+categories: ["asd", "asdad"]
+get_current_user_endpoint: ""
+
+auth_schemes:
+  - scheme_name: spondyr_api-key
+    auth_mode: API_KEY
+    proxy:
+      base_url: "http://www.spondyr.io/"
+      headers:
+        Authorization: "{{api_key}}"
+    fields:
+      - name: api_key
+        expected_from_customer: true 
+        displayName: API Key
+        description: "add_desc_here"
+        type: string
+        required: true
+      - name: base_url
+        expected_from_customer: true 
+        displayName: Base URL
+        description: "add_desc_here"
+        type: string
+        required: false
+        default: {{add the api endpoint URL of the app}}
