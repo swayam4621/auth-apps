@@ -6,11 +6,12 @@ categories: ["asd", "asdad"]
 get_current_user_endpoint: ""
 
 auth_schemes:
+  - scheme_name: browserhub_api-key
     auth_mode: API_KEY
     proxy:
       base_url: "https://app.browserhub.io/"
       headers:
-        Authorization: "Bearer {{api_key}}"
+        Authorization: "{{api_key}}"
     fields:
       - name: api_key
         expected_from_customer: true 
@@ -23,5 +24,5 @@ auth_schemes:
         displayName: Base URL
         description: "add_desc_here"
         type: string
-        required: false
+        required: false 
         default: {{add the api endpoint URL of the app}}
